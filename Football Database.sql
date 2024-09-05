@@ -162,7 +162,7 @@ JOIN club_games
 ON clubs.club_id = club_games.club_id
 JOIN games
 ON club_games.game_id = games.game_id
-WHERE (home_club_name = 'Real Madrid Club de Fútbol' OR home_club_name = 'Futbol Club Barcelona') AND (away_club_name = 'Real Madrid Club de Fútbol' OR away_club_name = 'Futbol Club Barcelona')
+WHERE (home_club_name = 'Real Madrid Club de FÃºtbol' OR home_club_name = 'Futbol Club Barcelona') AND (away_club_name = 'Real Madrid Club de FÃºtbol' OR away_club_name = 'Futbol Club Barcelona')
 
 --EL CLASSICO PLAYER STATS
 
@@ -176,7 +176,7 @@ JOIN appearances
 ON club_games.game_id = appearances.game_id
 join players
 ON appearances.player_id = players.player_id
-WHERE (home_club_name = 'Real Madrid Club de Fútbol' OR home_club_name = 'Futbol Club Barcelona') AND (away_club_name = 'Real Madrid Club de Fútbol' OR away_club_name = 'Futbol Club Barcelona')
+WHERE (home_club_name = 'Real Madrid Club de FÃºtbol' OR home_club_name = 'Futbol Club Barcelona') AND (away_club_name = 'Real Madrid Club de FÃºtbol' OR away_club_name = 'Futbol Club Barcelona')
 GROUP BY players.name, position, sub_position
 ORDER BY Goals DESC, Assists DESC
 

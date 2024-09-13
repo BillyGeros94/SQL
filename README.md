@@ -6,69 +6,106 @@ Projects Overview
 
 - **Project 1: Stars Database**
    
-    In this project, I created a basic SQL database containing information about the stars closest to our solar system. The project began with the creation of two tables: one named stars, which held the id, the names of the stars and their mass relative to the sun, and another called starsinfo, which included additional details such as the star’s id, color, distance from the solar system, and magnitude. Each column was assigned the appropriate data format to ensure accuracy and easy manipulation.
+    In this project, I focused on creating and managing a database of stars that are closest to our solar system. Initially, I set up two tables: STARS and STARSINFO. The STARS table 
+    includes columns for the star's ID, name, and mass, while the STARSINFO table contains columns for ID, star color, distance from Earth, and magnitude.
 
-    After defining the structure, I manually inserted the star data into both tables and used SQL queries to display the data as tables for visual representation and to ensure correctness. Once the data was in place, I started exploring it using basic queries. One of the first queries involved counting the number of stars by their color using the COUNT() aggregate function, returning the result as colournumber. Next, I ordered the stars by their mass in descending order, which allowed me to quickly identify both the largest and smallest stars near our solar system.
+    I started by populating the STARS table with data on various stars, including their names and masses. For example, stars like Proxima Centauri and Sirius A were added with their 
+    respective masses. Following this, I inserted data into the STARSINFO table, detailing the color, distance, and magnitude of each star. This included adding information such as 
+    Proxima Centauri being a red star with a distance of 4.24 light years.
 
-    To analyze distance, I joined the stars and starsinfo tables on their id column, returning the name, color, and distance of each star. By ordering this data in ascending order, I was able to determine which star was the closest to our solar system and which one was the furthest. Following this, I applied a filter to the same query to return only orange stars, allowing for a deeper exploration of stars of a specific color.
+    With the tables filled, I performed several queries to analyze the data. I began by counting the number of stars by their color, revealing a total of 26 red stars, 9 yellow stars, 
+    5 orange stars, 2 brown stars, 2 blue stars, and 2 white stars in our dataset. I then ordered the stars by their mass, identifying Sirius A as the largest star with a mass of 2.063 
+    times that of the Sun and WISE 1049-5319 as the smallest.
 
-    To gather information on a particular star, I joined the two tables again and filtered the results by the star’s name. I also ran a query to return the names and masses of stars with a mass greater than the sun, ordering them by mass in descending order to see which stars were most massive. Another query focused on identifying the yellow star with the largest magnitude by filtering for yellow-colored stars and ordering the results by magnitude in descending order.
+    Next, I ordered the stars by their distance from Earth, joining the STARS and STARSINFO tables to combine the relevant data. This revealed that Proxima Centauri is the closest star 
+    at 4.24 light years, while WISE 1506+7027 is the farthest at 16.85 light years. I also focused specifically on orange stars, determining that Proxima Centauri B is the closest 
+    orange star and Epsilon Indi is the farthest.
 
-    During the data analysis, I noticed an error in the star names, where one star had been incorrectly labeled. Using the UPDATE statement, I corrected the name and wrote a query to verify that the change had been successfully made, ensuring the database now reflected the correct information.
+    I retrieved detailed information about a particular star, Procyon A, finding that it is a white star with a mass of 1.499 times the Sun's mass, a distance of 11.4 light years, and 
+    a magnitude of 0.34. Furthermore, I identified stars with masses greater than the Sun's, such as Sirius A and Procyon A, and ordered them by their mass.
 
-    Overall, this project involved basic database operations like table creation, data insertion, JOINs, filtering, and data updates, offering a simple yet insightful exploration of the closest stars to our solar system using SQL.
+    I then looked for the yellow star with the largest magnitude and found that GI 234 B had the largest magnitude of 14.23 among yellow stars. During my review, I discovered a mistake 
+    where GI 437 B should have been GI 473 B. I corrected this error by updating the STARS table.
+
+    The project demonstrated how to manage and query a star database effectively, highlighting key stars and correcting data inaccuracies to maintain the integrity of the information.
 
 - **Project 2: Covid 19 Database**
 
-    In this project, I imported a COVID-19 database and began by writing a query to visualize and get a glimpse of the available data. I then extracted data about COVID-19 cases per country by selecting the location and population, using the MAX() aggregate function to calculate the total number of cases, labeled as total_cases. I also filtered out data for continents by ensuring the continent column was NULL. The results were grouped by location and population to allow the aggregate function to work properly, and the output was ordered by total cases in descending order.
+    For this project, I worked with COVID-19 data from Our World in Data to analyze global trends and dive deep into specific metrics for Greece. I started by looking at total cases 
+    per 
+    country and quickly realized that while countries like the U.S., China, and India had the highest numbers, this wasn’t a fair comparison because of population differences. So, I 
+    shifted to a more insightful metric: total cases as a percentage of the population. This showed countries like Cyprus, Brunei, and Austria as having the highest case percentages.
 
-    Next, I wrote a similar query to retrieve countries and their populations, this time ordering the results by population in descending order. After observing that countries with the highest number of COVID-19 cases generally had large populations, I decided that a more meaningful metric would be the proportion of cases relative to the population. In the following query, I used the MAX() function again to get the total cases, then divided it by the population and multiplied the result by 100 to calculate the percentage of total cases relative to the population. This result, labeled as total_cases_percentage, was also ordered in descending order, providing deeper insights into how COVID-19 affected different countries. I replicated this query but filtered specifically for Greece to focus on the country's data.
+    I then focused on Greece, where I found that 54.2% of the population had contracted COVID-19, with 5,635,901 total cases. Wanting to dig deeper, I explored global death rates, 
+    identifying countries like the U.S. and Brazil as having the highest absolute numbers. But when I looked at deaths per case, countries such as Yemen and Sudan showed the highest 
+    rates. For Greece, the death rate stood at 0.69%, with 39,019 deaths. I also calculated the mortality rate (deaths per population), and Greece had a rate of 0.37%, compared to more 
+    severely affected countries like Peru and Bulgaria.
 
-    To gain further insights, I used the MAX() function to calculate the total deaths for each country and then wrote a query to calculate the death rate (deaths per case) for all countries. This allowed me to see how many people died relative to the number of cases. I repeated this analysis specifically for Greece. Additionally, I calculated the mortality rate for each country, which represented the number of deaths per population, and conducted the same analysis on a continental level to see how the continents compared.
+    Next, I examined data at the continental level, discovering that Africa had the highest death rate at 2.5%, followed by South America. From there, I zoomed in on Greece’s timeline. 
+    The first cases appeared in early March 2020, and the first deaths soon followed. I was particularly interested in understanding the effect of vaccinations on Greece’s pandemic 
+    response. The first vaccinations started on December 28, 2020, and before that, the death rate was 2.3%, with 12,214 deaths out of 521,502 cases. After vaccinations, even though 
+    the 
+    total cases surged, the death rate dropped significantly to 0.5%, proving how effective the vaccination campaign was in reducing fatalities.
 
-    Shifting my focus entirely to Greece, I extracted all COVID-19 data related to the country. I identified the date when the first COVID-19 case appeared in Greece and how many cases were reported on that day. I applied the same approach to find the date and number of the first reported deaths. Similarly, I queried the data to determine when vaccinations began and how many were administered on the first day.
-
-    Finally, I wrote a series of queries θsing the SUM() aggregate function to compare the number of cases, deaths, and the death rate in Greece before and after vaccinations. This comparison allowed me to evaluate the impact of vaccinations on the spread of the virus and the overall death rate, providing valuable insights into the effectiveness of the vaccination campaign and the pandemic's progression over time.
+    This project allowed me to see the pandemic’s impact from a global perspective but also gave me the chance to focus on Greece, my area of interest, and highlight how critical 
+    interventions like vaccinations can make a huge difference in public health outcomes.
   
 - **Project 3: Nashville Housing DB Cleaning**
   
-    This project involved cleaning and formatting a Nashville housing dataset using various SQL techniques. Here's a breakdown of the steps taken:
+    For this project, I worked with the Nashville Housing dataset, focusing on data cleaning and standardization using SQL. I began by loading the dataset to get an initial overview. 
+    The first task was to standardize the SaleDate column, converting it into a consistent Date format for future queries and analysis.
 
-    First, I explored the data to get a general understanding of its structure. Then, I standardized the date format using the CONVERT() function to ensure consistency across all entries.
+    I then addressed the issue of missing property addresses by identifying rows where the PropertyAddress column was NULL. Observing that properties with the same ParcelID often 
+    shared 
+    the same address, I joined the dataset on ParcelID to find rows with missing addresses but valid addresses in other rows with the same ParcelID. I updated the missing 
+    PropertyAddress values by copying addresses from other rows with the same ParcelID, ensuring that all properties had complete address information.
 
-    Next, I addressed missing values in the PropertyAddress column. Some properties with the same ParcelID had a PropertyAddress, while others were missing it. To fill in these missing addresses, I used a self-join on the table, matching rows with the same ParcelID but different UniqueID. By filtering the rows with missing addresses, I was able to pull the correct PropertyAddress from those with the same ParcelID and update the PropertyAddress column using the ISNULL() function.
+    Next, I split the PropertyAddress column into two separate columns: Address and City. Using string manipulation functions, I extracted the part of the address before the comma as 
+    Address and the part after as City. I then created these new columns and populated them with the respective data. Similarly, I broke down the OwnerAddress column into OwnAddress, 
+    OwnCity, and OwnState. Since the PARSENAME function is designed to parse strings by dots, I first replaced commas with periods to allow PARSENAME to correctly split the addressinto 
+    its components. I added three new columns for the separated owner address, city, and state data.
 
-    After that, I split the PropertyAddress into separate columns for Address, City, and State. Using the SUBSTRING(), CHARINDEX(), and LEN() functions, I extracted the relevant parts of the address and updated the table with these new values.
+    After cleaning the addresses, I addressed the SoldAsVacant column, which contained binary values 0 and 1. I changed the column's datatype from bit to nvarchar(50) and used a CASE 
+    statement to replace 0 with 'No' and 1 with 'Yes', making the data more intuitive.
 
-    For the OwnerAddress column, I took a different approach. I used the PARSENAME() function to split the string based on periods, but since the address data used commas, I first replaced commas with periods using the REPLACE() function. This allowed me to efficiently split the data and insert it into newly created columns.
+    I then tackled duplicate rows in the dataset. Using the ROW_NUMBER() function, I partitioned the data by key columns such as ParcelID, PropertyAddress, SaleDate, SalePrice, and 
+    LegalReference. This allowed me to identify and retain only the first occurrence of each unique row, deleting others where ROW_NUMBER() indicated duplicates. In total, 104 
+    duplicate rows were identified and removed.
 
-    In the SoldAsVacant column, where 0 and 1 were used to represent "No" and "Yes," I changed the data type from BIT to NVARCHAR() and used a CASE statement to replace 0 with "No" and 1 with "Yes" for better readability.
+    Finally, I simplified the dataset by dropping columns that were no longer necessary, specifically the original PropertyAddress, OwnerAddress, and TaxDistrict columns. These columns 
+    were either redundant or their data had already been transformed into new columns. This cleanup made the dataset more streamlined and manageable for further analysis or reporting.
 
-    To remove duplicate records, I used the ROW_NUMBER() function. This function assigned a unique number to each row, partitioned by key columns like ParcelID, PropertyAddress, SaleDate, and others. Rows with the same partition values were considered duplicates, and I kept only the first occurrence by deleting rows where the row number was greater than 1.
-
-    Finally, I cleaned up the dataset by deleting unused columns, streamlining the data for future analysis. A final SELECT query was run to verify the results and ensure all changes had been applied correctly.
-
-    This comprehensive cleaning process enhanced the overall quality and usability of the Nashville housing data.
+    By the end of the project, the Nashville Housing dataset was thoroughly cleaned, standardized, and organized, ready for any subsequent analysis or reporting tasks.
 
 - **Project 4: Football Database**
     
-    In this project, I utilized a comprehensive football database from Transfermarkt to extract and analyze football data. The database, which includes tables on clubs, players, games, and player valuations, provided a robust framework for my analysis.
+   For this project, I used a football database with data from Transfermarkt to explore key stats, trends, and make data-driven decisions. The project starts with a general overview of 
+   the available data across tables like appearances, clubs, games, players, and more. I then dove into specific insights, beginning with the total number of clubs and players, 
+   revealing that the database contains 426 football clubs and 29,875 players.
 
-    I started by querying basic data from key tables like appearances, club games, clubs, and players to get an overview of the dataset. Using SELECT, I retrieved all columns from these tables to understand their structure and content.
+   I focused on Chelsea Football Club, examining its squad, stadium, and roster for the 2023 season. Chelsea’s home ground, Stamford Bridge, has a capacity of 40,853 seats, and their 
+   roster includes 32 players with an average age of 23.6 years. To assess Chelsea's performance under manager Mauricio Pochettino, I analyzed their results for the 2023/24 season. 
+   Chelsea scored a total of 107 goals but conceded 76, signaling strong offensive potential but defensive weaknesses. I then looked specifically at Chelsea's home games in the Premier 
+   League for the 22/23 season, finding that the club used the 4-2-3-1 formation 16 times and the 3-4-2-1 formation 3 times. On average, Chelsea scored 2 goals per home game and 
+   conceded 1, indicating decent home form.
 
-    My focus then shifted to Chelsea Football Club. By joining the clubs and players tables on club_id, I gathered information about the team’s average player age, stadium details, and player positions for the 2023 season. I filtered the data to focus on Chelsea and their manager, Mauricio Pochettino, and sorted players by position using ORDER BY.
+   Moving on to individual player stats, Cole Palmer emerged as Chelsea's standout player with 22 goals and 11 assists, making him the team's top scorer and assist provider. Conor 
+   Gallagher had the most minutes played at 3,136, while Moisés Caicedo led the squad with 12 yellow cards. Malo Gusto and Reece James were the only Chelsea players with red cards. 
+   Cole 
+   Palmer also had the highest market value, at €80,000,000.
 
-    To evaluate Chelsea’s performance in the 2023/24 season, I joined the clubs and club_games tables and used SUM to aggregate goals scored and conceded, grouping the results by club name. This analysis provided a clear picture of the team's overall performance.
+   I then shifted focus to Michael Olise, examining his overall career stats. Olise has scored 30 professional goals, assisted 48, and collected 12 yellow cards with no red cards, 
+   showcasing his discipline and attacking contributions.
 
-    I examined Chelsea’s Premier League home games by joining clubs, club_games, and games tables. I calculated average goals scored and conceded using COUNT and SUM, and analyzed formations and performance metrics with GROUP BY.
+   To add more context, I also analyzed El Clásico, the famous rivalry between Real Madrid and Barcelona, focusing on match results and player performances. Lionel Messi leads the 
+   historical El Clásico stats with 26 goals and 8 assists, followed by Karim Benzema with 24 goals and 14 assists. Cristiano Ronaldo and Luis Suárez also feature prominently with 
+   impressive goal tallies. Vinícius Júnior, a more recent star, has 14 goals and 8 assists.
 
-    For player statistics, I aggregated yellow cards, red cards, goals, assists, and minutes played using SUM. I paid special attention to Michael Olise, compiling his performance data with GROUP BY and SUM.
+   Finally, I explored the Bundesliga to identify the top 5 most valuable players as of May 2024. Florian Wirtz ranks as the most valuable player with a valuation of €130,000,000, 
+   followed by Jamal Musiala, Harry Kane, Xavi Simons, and Leroy Sané.
 
-    In analyzing El Clasico matches, I joined relevant tables and used WHERE clauses to filter for games between Real Madrid and FC Barcelona. This provided insights into game results, player stats, and formations for these high-profile matches.
-
-    Lastly, I identified the top 5 most valuable Bundesliga players by joining clubs, player_valuations, and players tables. I sorted players by market value and filtered for the 2023 season, highlighting the top valuations as of May 29, 2024.
-
-    This project allowed me to perform a thorough analysis of team and player performance, tactical approaches, and market valuations in football, using SQL queries to derive valuable insights.
+   Overall, this project allowed me to examine football clubs, players, and competitions, making use of SQL to derive meaningful insights and trends from the data. It provides a solid 
+   foundation for further analysis and decision-making in the world of football.
 
 - **Project 5:** In the lab, stay tuned!
 

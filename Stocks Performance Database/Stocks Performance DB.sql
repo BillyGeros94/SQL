@@ -179,3 +179,5 @@ EXEC CalculateDailyReturn 'NTDOY'
 EXEC CalculateDailyReturn 'ADDYY'
 
 EXEC CalculateDailyReturn 'PHG'
+
+-- Placeholder for future querries

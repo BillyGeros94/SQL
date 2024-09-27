@@ -107,7 +107,29 @@ Projects Overview
    Overall, this project allowed me to examine football clubs, players, and competitions, making use of SQL to derive meaningful insights and trends from the data. It provides a solid 
    foundation for further analysis and decision-making in the world of football.
 
-- **Project 5:** In the lab, stay tuned!
+- **Project 5: Stocks Perdormance Database**
+
+    In this SQL portfolio project, I focused on analyzing stock performance data from a database. Initially, I queried the entire stock prices table to understand its structure and 
+    contents, which included attributes like date, ticker symbols, opening and closing prices, and trading volumes.
+
+    I implemented several queries to filter data for specific use cases, such as retrieving stock data within a defined date range and focusing on individual stocks like Apple (AAPL) 
+    and Microsoft (MSFT). I also examined stocks based on industry and country, allowing me to identify trends within specific sectors, particularly in the tech industry.
+
+    Key analyses included calculating daily percentage changes, or daily returns, for individual stocks, and applying a 7-day moving average to smooth out fluctuations. I identified 
+    the top five stocks with the highest trading volumes, calculated dividend yields, and analyzed stocks that underwent splits to understand their post-split prices.
+
+    To enhance the analysis, I computed the average closing price over specific periods, identified the highest and lowest prices, and calculated monthly averages. I also examined 
+    stocks with consistent growth and those that had not paid dividends.
+
+    Using a Common Table Expression (CTE), I identified the stock with the highest percentage gain in 2023, which was NVIDIA, showing a remarkable 1124% increase. Additionally, I 
+    compared stock performance by industry, revealing which sectors outperformed others.
+
+    To streamline my queries, I created a view called Stock_Performance that encapsulated daily return calculations, making it easier to retrieve data without rewriting SQL code. 
+    Finally, I demonstrated the use of stored procedures by creating one to calculate daily returns for specific tickers, allowing for quick execution without exposing the underlying 
+    SQL details.
+
+    Overall, this project showcased a comprehensive analysis of stock performance data, employing various SQL techniques to extract meaningful insights and facilitate informed 
+    decision-making based on market behavior.
 
 - **Project 6:** Brewing up some data, watch this space!
     

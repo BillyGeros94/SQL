@@ -180,4 +180,4 @@ EXEC CalculateDailyReturn 'ADDYY'
 
 EXEC CalculateDailyReturn 'PHG'
 
--- Placeholder for future querries
+-- *Placeholder for future querries*

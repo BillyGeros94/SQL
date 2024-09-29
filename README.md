@@ -4,30 +4,25 @@ Welcome to my SQL Portfolio! This repository showcases a collection of SQL-based
 
 Projects Overview
 
-- **Project 1: Stars Database**
+- **Project 1: Football Scout Database**
    
-    In this project, I focused on creating and managing a database of stars that are closest to our solar system. Initially, I set up two tables: STARS and STARSINFO. The STARS table 
-    includes columns for the star's ID, name, and mass, while the STARSINFO table contains columns for ID, star color, distance from Earth, and magnitude.
+    In this project, we assumed the role of a scout for an English League One football team, aiming to analyze a dataset of football players to identify potential signings that align 
+    with the team's playing style and specific needs. We focused on assembling a squad capable of fast, dynamic, and vertical football, emphasizing attributes such as speed, dribbling, 
+    and technical skills.
 
-    I started by populating the STARS table with data on various stars, including their names and masses. For example, stars like Proxima Centauri and Sirius A were added with their 
-    respective masses. Following this, I inserted data into the STARSINFO table, detailing the color, distance, and magnitude of each star. This included adding information such as 
-    Proxima Centauri being a red star with a distance of 4.24 light years.
+    We outlined the positions we needed to fill: a right back, two center backs, a defensive midfielder, a central midfielder, a winger, and a forward. Each position came with specific 
+    criteria, including age restrictions and financial constraints on wages and transfer values. We also identified key performance metrics that matched our tactical philosophy.
 
-    With the tables filled, I performed several queries to analyze the data. I began by counting the number of stars by their color, revealing a total of 26 red stars, 9 yellow stars, 
-    5 orange stars, 2 brown stars, 2 blue stars, and 2 white stars in our dataset. I then ordered the stars by their mass, identifying Sirius A as the largest star with a mass of 2.063 
-    times that of the Sun and WISE 1049-5319 as the smallest.
+    For the right wing back, we targeted players based on distance covered, speed, crossing accuracy, and assists. Our SQL query enabled us to filter candidates effectively, allowing us 
+    to find a well-rounded player for both defensive and attacking roles. For the center backs, we emphasized height and defensive skills, requiring players over 1.85 meters with strong 
+    stats in tackles and interceptions.
 
-    Next, I ordered the stars by their distance from Earth, joining the STARS and STARSINFO tables to combine the relevant data. This revealed that Proxima Centauri is the closest star 
-    at 4.24 light years, while WISE 1506+7027 is the farthest at 16.85 light years. I also focused specifically on orange stars, determining that Proxima Centauri B is the closest 
-    orange star and Epsilon Indi is the farthest.
+    In the defensive midfielder search, we focused on work rate and defensive actions, allowing for shorter players who excel in those metrics. For the central midfielder, we sought a 
+    creative risk-taker who could provide key passes despite potentially lower passing accuracy. The winger query prioritized goal-scoring and dribbling abilities, while the forward 
+    search aimed to find a player skilled in both scoring and playmaking.
 
-    I retrieved detailed information about a particular star, Procyon A, finding that it is a white star with a mass of 1.499 times the Sun's mass, a distance of 11.4 light years, and 
-    a magnitude of 0.34. Furthermore, I identified stars with masses greater than the Sun's, such as Sirius A and Procyon A, and ordered them by their mass.
-
-    I then looked for the yellow star with the largest magnitude and found that GI 234 B had the largest magnitude of 14.23 among yellow stars. During my review, I discovered a mistake 
-    where GI 437 B should have been GI 473 B. I corrected this error by updating the STARS table.
-
-    The project demonstrated how to manage and query a star database effectively, highlighting key stars and correcting data inaccuracies to maintain the integrity of the information.
+    Overall, this project highlighted a systematic approach to data-driven player scouting. By clearly defining our needs and crafting targeted SQL queries, we were able to compile a 
+    list of potential signings that fit within our budget and aligned with the team's tactical goals, ultimately supporting informed decision-making in the transfer market.
 
 - **Project 2: Covid 19 Database**
 

@@ -6,23 +6,30 @@ Projects Overview
 
 - **Project 1: Football Scout Database**
    
-    In this project, we assumed the role of a scout for an English League One football team, aiming to analyze a dataset of football players to identify potential signings that align 
-    with the team's playing style and specific needs. We focused on assembling a squad capable of fast, dynamic, and vertical football, emphasizing attributes such as speed, dribbling, 
-    and technical skills.
+    In this project, we operated as a football scout, leveraging a comprehensive player dataset to identify potential signings that would meet the specific needs of our club. We began 
+    by thoroughly exploring the data to understand the available player attributes and performance metrics. This initial step was crucial for tailoring our queries to find players who 
+    not only fit within our financial constraints but also aligned with the tactical style we wished to implement on the pitch.
 
-    We outlined the positions we needed to fill: a right back, two center backs, a defensive midfielder, a central midfielder, a winger, and a forward. Each position came with specific 
-    criteria, including age restrictions and financial constraints on wages and transfer values. We also identified key performance metrics that matched our tactical philosophy.
+    For each key position we aimed to fill—Right Wing Back, two Centre Backs, a Defensive Midfielder, a Central Midfielder, a Winger, and a Forward—we established clear criteria that 
+    focused on both defensive and offensive contributions. For the Right Wing Back, we prioritized players who demonstrated exceptional pace and covered significant distances, alongside 
+    strong defensive metrics such as tackles won and interceptions. We also looked for good attacking output, assessing metrics like crossing accuracy and assists. The SQL query we 
+    crafted enabled us to filter for candidates who excelled in these areas, ensuring we identified the best options.
 
-    For the right wing back, we targeted players based on distance covered, speed, crossing accuracy, and assists. Our SQL query enabled us to filter candidates effectively, allowing us 
-    to find a well-rounded player for both defensive and attacking roles. For the center backs, we emphasized height and defensive skills, requiring players over 1.85 meters with strong 
-    stats in tackles and interceptions.
+    When searching for Centre Backs, we emphasized physical attributes, particularly height, requiring players to be over 6 feet tall. We also prioritized defensive solidity, looking 
+    for metrics that demonstrated dominance in aerial duels, along with solid passing abilities. This systematic approach allowed us to pinpoint strong, effective defenders who could 
+    not only protect the backline but also contribute to build-up play.
 
-    In the defensive midfielder search, we focused on work rate and defensive actions, allowing for shorter players who excel in those metrics. For the central midfielder, we sought a 
-    creative risk-taker who could provide key passes despite potentially lower passing accuracy. The winger query prioritized goal-scoring and dribbling abilities, while the forward 
-    search aimed to find a player skilled in both scoring and playmaking.
+    For the Defensive Midfielder, our focus was on players who could cover large areas of the pitch while excelling in defensive metrics like tackles and interceptions. We required 
+    strong passing abilities to ensure they could effectively distribute the ball and maintain possession. Similarly, when scouting for a Central Midfielder, we sought a creative risk- 
+    taker, someone who could play vertically and provide key passes despite possibly having lower passing accuracy. This creative approach was critical for enhancing our attacking play.
 
-    Overall, this project highlighted a systematic approach to data-driven player scouting. By clearly defining our needs and crafting targeted SQL queries, we were able to compile a 
-    list of potential signings that fit within our budget and aligned with the team's tactical goals, ultimately supporting informed decision-making in the transfer market.
+    In our search for a Winger, we looked for players who could score goals and create chances through dribbling and passing. Key performance metrics such as goals, expected goals, 
+    assists, and key passes guided our selection process, allowing us to find wingers who would fit seamlessly into our attacking strategy. Finally, for the Forward position, we aimed 
+    to identify players with a blend of playmaking and goal-scoring abilities, ensuring they could contribute to both aspects of our attack.
+
+    Overall, this project showcased a comprehensive methodology that integrated clear positional needs with data-driven analysis. By utilizing targeted SQL queries, we systematically 
+    identified players who not only fit our financial limitations but also enhanced our tactical philosophy. This structured approach to scouting will support informed decision-making 
+    in the transfer market, enabling us to build a competitive and cohesive squad for the upcoming season.
 
 - **Project 2: Covid 19 Database**
 

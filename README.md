@@ -131,7 +131,27 @@ Projects Overview
     Overall, this project showcased a comprehensive analysis of stock performance data, employing various SQL techniques to extract meaningful insights and facilitate informed 
     decision-making based on market behavior.
 
-- **Project 6:** Brewing up some data, watch this space!
+- **Project 6: Seattle Airbnb Database**
+  
+    This SQL portfolio project analyzes Seattle Airbnb data using a structured series of queries, progressing from basic to intermediate and a few advanced techniques. The project 
+    begins with simple data exploration by selecting all data from the calendar, listings, and reviews tables to understand the dataset’s structure. From there, I perform basic queries 
+    like filtering listings with prices below $100 and counting the total number of listings per room type using the GROUP BY clause, providing insights into pricing distribution and 
+    room type availability.
+
+    The analysis deepens with an average price calculation by neighborhood, highlighting which areas are more expensive. Then, I examine the availability of listings on a specific date 
+    by joining the calendar and listings tables, filtering for available listings, and sorting by price to show which properties are open on that date. The review analysis involves 
+    counting reviews per listing and identifying hosts with multiple listings, providing insights into both customer engagement and host activity.
+
+    Further queries explore pricing patterns, identifying the top 5 most expensive listings, and calculating the average number of reviews per neighborhood to gauge customer interest. I 
+    also break down total listings and average price by both room type and neighborhood, offering a detailed view of market distribution and pricing trends across room types in 
+    different neighborhoods.
+
+    In the intermediate and advanced sections, I calculate the total reviews for hosts across all their listings and track the cumulative number of reviews over time using a Common 
+    Table Expression (CTE). Advanced queries include using CTEs and window functions to rank listings by price within each neighborhood, identifying the most expensive listing in each 
+    area. Additionally, I find hosts with listings in multiple neighborhoods, showcasing those with a diverse portfolio across the city.
+
+    Throughout the project, I balance basic SQL techniques such as filtering, grouping, and joins, with more advanced features like CTEs and window functions to extract meaningful 
+    insights. The project culminates in a well-rounded analysis of Seattle’s Airbnb market, providing insights into pricing, availability, and host behaviors.
     
 ## Each project contains the following:
 

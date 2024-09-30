@@ -109,7 +109,7 @@ Projects Overview
    Overall, this project allowed me to examine football clubs, players, and competitions, making use of SQL to derive meaningful insights and trends from the data. It provides a solid 
    foundation for further analysis and decision-making in the world of football.
 
-- **Project 5: Stocks Perdormance Database**
+- **Project 5: Stocks Performance Database**
 
     In this SQL portfolio project, I focused on analyzing stock performance data from a database. Initially, I queried the entire stock prices table to understand its structure and 
     contents, which included attributes like date, ticker symbols, opening and closing prices, and trading volumes.

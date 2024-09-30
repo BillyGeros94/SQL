@@ -4,7 +4,7 @@ Welcome to my SQL Portfolio! This repository showcases a collection of SQL-based
 
 Projects Overview
 
-- **Project 1: Football Scout Database**
+- **Project 1: Football Scout**
    
     In this project, we operated as a football scout, leveraging a comprehensive player dataset to identify potential signings that would meet the specific needs of our club. We began 
     by thoroughly exploring the data to understand the available player attributes and performance metrics. This initial step was crucial for tailoring our queries to find players who 
@@ -31,7 +31,7 @@ Projects Overview
     identified players who not only fit our financial limitations but also enhanced our tactical philosophy. This structured approach to scouting will support informed decision-making 
     in the transfer market, enabling us to build a competitive and cohesive squad for the upcoming season.
 
-- **Project 2: Covid 19 Database**
+- **Project 2: Covid 19**
 
     For this project, I worked with COVID-19 data from Our World in Data to analyze global trends and dive deep into specific metrics for Greece. I started by looking at total cases 
     per 
@@ -52,7 +52,7 @@ Projects Overview
     This project allowed me to see the pandemic’s impact from a global perspective but also gave me the chance to focus on Greece, my area of interest, and highlight how critical 
     interventions like vaccinations can make a huge difference in public health outcomes.
   
-- **Project 3: Nashville Housing DB Cleaning**
+- **Project 3: Nashville Housing**
   
     For this project, I worked with the Nashville Housing dataset, focusing on data cleaning and standardization using SQL. I began by loading the dataset to get an initial overview. 
     The first task was to standardize the SaleDate column, converting it into a consistent Date format for future queries and analysis.
@@ -79,7 +79,7 @@ Projects Overview
 
     By the end of the project, the Nashville Housing dataset was thoroughly cleaned, standardized, and organized, ready for any subsequent analysis or reporting tasks.
 
-- **Project 4: Football Database**
+- **Project 4: Football**
     
    For this project, I used a football database with data from Transfermarkt to explore key stats, trends, and make data-driven decisions. The project starts with a general overview of 
    the available data across tables like appearances, clubs, games, players, and more. I then dove into specific insights, beginning with the total number of clubs and players, 
@@ -109,7 +109,7 @@ Projects Overview
    Overall, this project allowed me to examine football clubs, players, and competitions, making use of SQL to derive meaningful insights and trends from the data. It provides a solid 
    foundation for further analysis and decision-making in the world of football.
 
-- **Project 5: Stocks Performance Database**
+- **Project 5: Stocks Performance**
 
     In this SQL portfolio project, I focused on analyzing stock performance data from a database. Initially, I queried the entire stock prices table to understand its structure and 
     contents, which included attributes like date, ticker symbols, opening and closing prices, and trading volumes.
@@ -133,7 +133,7 @@ Projects Overview
     Overall, this project showcased a comprehensive analysis of stock performance data, employing various SQL techniques to extract meaningful insights and facilitate informed 
     decision-making based on market behavior.
 
-- **Project 6: Seattle Airbnb Database**
+- **Project 6: Seattle Airbnb**
   
     This SQL portfolio project analyzes Seattle Airbnb data using a structured series of queries, progressing from basic to intermediate and a few advanced techniques. The project 
     begins with simple data exploration by selecting all data from the calendar, listings, and reviews tables to understand the dataset’s structure. From there, I perform basic queries 

@@ -116,3 +116,5 @@ ORDER BY Gls DESC, xG DESC, Drb DESC, K_Pas DESC, Pres_A DESC, xA DESC
 -- we crafted targeted SQL queries to filter through a dataset of players. 
 -- Our methodology emphasized essential skills such as speed, dribbling, defensive capabilities, and playmaking potential, 
 -- allowing us to compile a list of candidates who not only fit within our budgetary limits but also aligned with our tactical philosophy.
+
+-- *Placeholder for future queries*
